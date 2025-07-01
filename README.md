@@ -18,7 +18,6 @@ docker run -p 8080:8080 task-api
 ## API Endpoints
 
 - `POST /tasks` - создать задачу
-- `GET /tasks` - получить все задачи  
 - `GET /tasks/{id}` - получить задачу по ID
 - `DELETE /tasks/{id}` - удалить задачу
 
@@ -40,8 +39,3 @@ curl http://localhost:8080/tasks/{task-id}
 ```bash
 curl -X DELETE http://localhost:8080/tasks/{task-id}
 ```
-
-## Особенности
-- Задачи обрабатываются 3-5 минут (случайно)
-- Прогресс обновляется каждую секунду
-- При удалении задачи горутина корректно завершается
